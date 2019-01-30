@@ -1,7 +1,10 @@
 // initial game data
-let players = ["X", "0"];
-let currentPlayer = players[0];
-let grid = [["", "", ""], ["", "", ""], ["", "", ""]];
+let currentPlayer = "X";
+let grid = [
+  ["", "", ""],
+  ["", "", ""],
+  ["", "", ""]
+];
 
 // grab elements from DOM
 let cells = document.querySelectorAll("td");
@@ -67,13 +70,13 @@ function endGame(text) {
 }
 
 /**
- * Toggles the current player, based on the global players variable.
+ * Toggles the current player
  */
 function togglePlayer() {
-  if (currentPlayer === players[0]) {
-    currentPlayer = players[1];
+  if (currentPlayer === "X") {
+    currentPlayer = "O";
   } else {
-    currentPlayer = players[0];
+    currentPlayer = "X";
   }
   setStatus(`${currentPlayer}'s turn.`);
 }
