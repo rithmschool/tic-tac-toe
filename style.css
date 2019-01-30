@@ -4,7 +4,7 @@ body {
   font-family: 'VT323', monospace;
 }
 
-h1 {
+h1, #status {
   text-align: center;
   font-size: 50px;
 }
@@ -20,6 +20,8 @@ td {
   border: 5px solid black;
   width: 150px;
   height: 150px;
+  text-align: center;
+  font-size: 100px;
 }
 
 td:hover {
